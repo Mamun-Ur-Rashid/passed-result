@@ -1,0 +1,31 @@
+
+h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0ch;
+    background-color: rgb(205, 182, 226);
+    
+} 
+input, button {
+    padding: 6px;
+    margin: 5px 0px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#searchName{
+    padding: 6px;
+    margin: 5px 0px;
+    width: 97%;
+    border: 1px solid rgb(123, 123, 167);
+}
+.student {
+    padding: 5px;
+}

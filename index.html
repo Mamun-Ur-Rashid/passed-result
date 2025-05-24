@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Student marks</title>
+</head>
+<body>
+    <h1>Student filter and search</h1>
+    <div class="container">
+        <h2>Search by Name</h2>
+        <input type="text" id="searchName" placeholder="Student Name">
+        <button onclick="searchStudend()">Search</button>
+        <div class="student" id="searchResult"></div>
+
+        <h2>Filter Student With Marks</h2>
+        <button onclick="passedStudent()">Show Passed Student</button>
+        <div class="student" id="filterResult"></div>
+
+        <h2>Find first Failled Student</h2>
+        <button onclick="failedStudent()">Show First Failed Student</button>
+        <div class="student" id="failledStudent"></div>
+
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
