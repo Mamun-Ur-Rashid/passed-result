@@ -12,7 +12,18 @@ Students = [
 
 function searchStudent(params) {
     const nameValue = document.getElementById("searchName").value.trim();
-    const foundStudent = Students.find((sutdent) => sutdent.name.toLowerCase() === nameValue.toLowerCase());
+    const foundStudent = Students.find((student) => student.name.toLowerCase() === nameValue.toLowerCase());
     const resultDiv = document.getElementById("searchResult");
+
+    if(foundStudent){
+        resultDiv.innerHTML = `<div class="result"> Found ${foundStudent.name} (Marks: ${foundStudent.marks})</div>`
+    }else{
+        resultDiv.innerHTML = `<div class="result">No result Found search with : ${nameValue}</div>`
+    }
+
+}
+// filter passed student
+function passedStudent(params){
+    const result = Students.filter((data)=> data.marks > 40);
     
 }
