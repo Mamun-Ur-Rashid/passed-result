@@ -35,3 +35,15 @@ function passedStudent(params){
     }
 
 }
+// find first failled student
+function failedStudent(params){
+    const restult = Students.find((student) => student.marks <= 40);
+    console.log(restult)
+    const failedStudent = document.getElementById("failledStudent");
+    
+    if(restult){
+        failedStudent.innerHTML = `<div class="result"> Failled Student name: ${restult.name} (Marks: ${restult.marks})</div>`
+    }else{
+        failedStudent.innerHTML = `<div class="result">No Failled Student!</div>`
+    }
+}
