@@ -26,4 +26,12 @@ function searchStudent(params) {
 function passedStudent(params){
     const result = Students.filter((data)=> data.marks > 40);
     
+    const filterResult = document.getElementById("filterResult");
+    
+    if (result.length > 0){
+        filterResult.innerHTML = result.map((student) => `<div> ${student.name} (Marks: ${student.marks})</div>`).join("");
+    }else{
+        filterResult.innerHTML = `<div class="result">No passed Student!</div>`
+    }
+
 }
